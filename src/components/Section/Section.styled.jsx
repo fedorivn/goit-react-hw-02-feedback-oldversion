@@ -5,9 +5,6 @@ export const Container = styled.section`
   align-items: center;
   margin: 0 auto;
   background-color: rgb(229, 238, 252);
-  /* display: flex;
-  flex-direction: column;
-  gap: 10px; */
   padding-top: 20px;
   align-items: center;
   border: 2px dotted rgb(27, 113, 242);
