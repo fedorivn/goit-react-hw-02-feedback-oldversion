@@ -1,10 +1,11 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import {Container} from './Section.styled'
+import { Container } from './Section.styled';
 
-export const Section =({title, children})=>{
-    return (
-       <Container>
-        {children}
-        </Container>
-    )
-}
+export const Section = ({ children }) => {
+  return <Container>{children}</Container>;
+};
+Section.propTypes = {
+  children: PropTypes.node,
+};

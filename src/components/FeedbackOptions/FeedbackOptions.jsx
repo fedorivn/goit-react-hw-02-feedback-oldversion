@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {Container,  Button, ButtonsList } from './FeedbackOptions.styled'
 
-export const Buttons = ({ options, onClickHendler }) => {
+export const FeedbackOptions = ({ options, onClickHendler }) => {
   return (
    <Container>
     <ButtonsList>
@@ -13,4 +15,8 @@ export const Buttons = ({ options, onClickHendler }) => {
     </ButtonsList >
     </Container>
   );
+};
+FeedbackOptions.propTypes = {
+ options:PropTypes.arrayOf.isRequired,
+ onClickHendler: PropTypes.func
 };
